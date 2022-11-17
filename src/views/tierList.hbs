@@ -44,13 +44,17 @@
         <a href='../../'><i class="fa fa-home"></i></a>
     </header>
     <div id="container">
+        {{> tier-block tier='EX' animes=this.animes.EX}}
         {{> tier-block tier='SS' animes=this.animes.SS}}
         {{> tier-block tier='S' animes=this.animes.S}}
+        {{> tier-block tier='A++' animes=this.animes.App}}
+        {{> tier-block tier='A+' animes=this.animes.Ap}}
         {{> tier-block tier='A' animes=this.animes.A}}
+        {{> tier-block tier='B+' animes=this.animes.Bp}}
         {{> tier-block tier='B' animes=this.animes.B}}
+        {{> tier-block tier='B-' animes=this.animes.Bm}}
         {{> tier-block tier='C' animes=this.animes.C}}
         {{> tier-block tier='D' animes=this.animes.D}}
-        {{> tier-block tier='F' animes=this.animes.F}}
     </div>
 
     <script src='/js/profileRedirect.js'></script>
