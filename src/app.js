@@ -6,8 +6,6 @@ const anilist = require('./controllers/anilist');
 const kitsu = require('./controllers/kitsu');
 const mal = require('./controllers/mal');
 
-hbs.registerPartial('github-corner', fs.readFileSync(`./src/views/partials/githubCorner.hbs`, 'utf8'));
-
 const app = express();
 
 app.use(anilist);
@@ -24,7 +22,7 @@ app.set('views', viewsDirectory)
 
 app.get('/', async (req, res) => {
     if (!req.query.user) {
-        return res.render('index');
+        return res.status(404)
     }
     const { user, service } = req.query;
 

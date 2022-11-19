@@ -1,8 +1,3 @@
-<head></head>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 {{#*inline "tier"}}
     <div class="tier">
         <div class="tier-rank" id='{{ this.tier }}-Rank'>
@@ -31,17 +26,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
     <link rel='stylesheet' href='/css/style.css'>
     <title>Anime Tier List</title>
 </head>
 <body>
     <div id="background" style="background:{{userProfile.userBackground}};background-size:cover;background-repeat:no-repeat;" ></div>
     <header style="background:{{userProfile.userHeader}};">
-        <a id='user-profile'><img id='header-img' src='{{userProfile.userImage}}'></a>
+        {{!-- <a id='user-profile'><img id='header-img' src='{{userProfile.userImage}}'></a> --}}
         <h2>{{user}}'s Tier List</h2>
-        <a href='../../'><i class="fa fa-home"></i></a>
     </header>
     <div id="container">
         {{> tier-block tier='EX' animes=this.animes.EX}}
