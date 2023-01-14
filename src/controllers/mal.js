@@ -117,38 +117,7 @@ const transformManga = manga => ({
 
 const customRatings = (anime, {userCustomRatings}) => {
     for (let i=0; i<anime.length; i++) {
-        switch(anime[i].score) {
-            case 10: 
-                anime[i].tier = userCustomRatings[0];
-                break;
-            case 9: 
-                anime[i].tier = userCustomRatings[1];
-                break;   
-            case 8: 
-                anime[i].tier = userCustomRatings[2];
-                break;
-            case 7: 
-                anime[i].tier = userCustomRatings[3];
-                break;
-            case 6: 
-                anime[i].tier = userCustomRatings[4];
-                break;
-            case 5: 
-                anime[i].tier = userCustomRatings[5];
-                break;
-            case 4: 
-                anime[i].tier = userCustomRatings[6];
-                break;
-            case 3: 
-                anime[i].tier = userCustomRatings[7];
-                break; 
-            case 2: 
-                anime[i].tier = userCustomRatings[8];
-                break;
-            case 1: 
-                anime[i].tier = userCustomRatings[9];
-                break;
-        }
+        anime[i].tier = userCustomRatings[10-anime[i].score];
     }
     // console.log(anime);
 }

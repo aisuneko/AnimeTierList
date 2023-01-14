@@ -87,11 +87,13 @@ router.get("/anilist/:user", async (req, res) => {
         const userProfile = await fetchUserProfile(user);
         const listEntries = await fetchTierLists(user, "anime");
         const animes = helpers.tallyAnimeScores(listEntries);
+        // console.log(animes)
         return res.render("tierList", { animes, user, userProfile });
     } catch (err) {
-        return res.render("404", {
-            error: "This anilist account does not exist or is void of rankings"
-        });
+        res.status(404).send("This anilist account does not exist or is void of rankings");
+        // return res.render("404", {
+        //     error: "This anilist account does not exist or is void of rankings"
+        // });
     }
 });
 
