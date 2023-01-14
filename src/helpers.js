@@ -4,19 +4,27 @@ let tierBreakpoints = [
         breakpoint: 9.5
     },
     {
+        tier: 'SS+',
+        breakpoint: 9.1
+    },
+    {
         tier: 'SS',
         breakpoint: 9
+    },
+    {
+        tier: 'S+',
+        breakpoint: 8.8
     },
     {
         tier: 'S',
         breakpoint: 8.7
     },
     {
-        tier: 'App',
+        tier: 'A+',
         breakpoint: 8.5
     },
     {
-        tier: 'Ap',
+        tier: 'A+',
         breakpoint: 8.1
     },
     {
@@ -24,7 +32,11 @@ let tierBreakpoints = [
         breakpoint: 8
     },
     {
-        tier: 'Bp',
+        tier: 'A+',
+        breakpoint: 7.9
+    },
+    {
+        tier: 'B+',
         breakpoint: 7.6
     },
     {
@@ -32,7 +44,7 @@ let tierBreakpoints = [
         breakpoint: 7.5
     },
     {
-        tier: 'Bm',
+        tier: 'B+',
         breakpoint: 7
     },
     {
