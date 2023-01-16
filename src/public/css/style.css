@@ -2,18 +2,6 @@
 
 :root {
     --Banner: #313131;
-    --EX: rgb(37, 172, 225);
-    --SS: rgb(146, 184, 199);
-    --S: #6E44FF;
-    --App: #8653e4;
-    --Ap: #a77bf8;
-    --A: #B892FF;
-    --Bp: #fac4e0;
-    --B: #fa9ccd;
-    --Bm: #FF90B3;
-    --C: #EF7A85;
-    --D: #E85F5C;
-    --F: #E85F5C;
     --imgH: 130px;
     --imgW: 100px;
 }
@@ -143,50 +131,6 @@ header h2 {
 .anime {
     min-height: var(--imgH);
 }
-
-#EX-Rank {
-    background: var(--EX);
-}
-
-#SS-Rank {
-    background: var(--SS);
-}
-
-#S-Rank {
-    background: var(--S);
-}
-
-#A\+\+-Rank {
-    background: var(--App);
-}
-#A\+-Rank {
-    background: var(--Ap);
-}
-#A-Rank {
-    background: var(--A);
-}
-
-#B\+-Rank {
-    background: var(--Bp);
-}
-
-#B-Rank {
-    background: var(--B);
-}
-
-#B--Rank {
-    background: var(--Bm);
-}
-
-#C-Rank {
-    background: var(--C);
-}
-
-#D-Rank {
-    background: var(--D);
-}
-
-
 
 .rank {
     font-size: 3.5rem;

@@ -56,6 +56,7 @@ const fetchTierLists = async (user, mediaType) => {
 
     // query is specifically set up to only return one list
     const completedList = data.collection.lists[0].entries;
+    completedList.sort((a,b) => b.score - a.score);
     return completedList.map(transformAnime(mediaType));
 };
 

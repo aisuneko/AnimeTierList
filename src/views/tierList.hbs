@@ -1,6 +1,6 @@
 {{#*inline "tier"}}
     <div class="tier">
-        <div class="tier-rank" id='{{ this.tier }}-Rank'>
+        <div class="tier-rank" id='{{ this.tier }}'>
             <h3 class='rank'>{{ this.tier }}</h3>
         </div>
         <div class="anime">
@@ -30,25 +30,13 @@
     <title>Anime Tier List</title>
 </head>
 <body>
+    <script src='/js/generateColors.js' type="module"></script>
     <div id="background" style="background:{{userProfile.userBackground}};background-size:cover;background-repeat:no-repeat;" ></div>
-    <header style="background:{{userProfile.userHeader}};">
-        {{!-- <a id='user-profile'><img id='header-img' src='{{userProfile.userImage}}'></a> --}}
-        <h2>{{user}}'s Tier List</h2>
-    </header>
     <div id="container">
-        {{> tier-block tier='EX' animes=this.animes.EX}}
-        {{> tier-block tier='SS' animes=this.animes.SS}}
-        {{> tier-block tier='S' animes=this.animes.S}}
-        {{> tier-block tier='A++' animes=this.animes.App}}
-        {{> tier-block tier='A+' animes=this.animes.Ap}}
-        {{> tier-block tier='A' animes=this.animes.A}}
-        {{> tier-block tier='B+' animes=this.animes.Bp}}
-        {{> tier-block tier='B' animes=this.animes.B}}
-        {{> tier-block tier='B-' animes=this.animes.Bm}}
-        {{> tier-block tier='C' animes=this.animes.C}}
-        {{> tier-block tier='D' animes=this.animes.D}}
+        {{#each this.animes}}
+            {{> tier-block tier=@key animes=this}}
+        {{/each}}
     </div>
 
-    <script src='/js/profileRedirect.js'></script>
 </body>
 </html>
