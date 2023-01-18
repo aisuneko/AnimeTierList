@@ -32,11 +32,16 @@
 <body>
     <script src='/js/generateColors.js' type="module"></script>
     <div id="background" style="background:{{userProfile.userBackground}};background-size:cover;background-repeat:no-repeat;" ></div>
+    {{!-- <header style="background:{{userProfile.userHeader}};" id="username-header">
+        <a id='user-profile'><img id='header-img' src='{{userProfile.userImage}}'></a>
+        <h2>{{user}}'s Tier List</h2>
+        <a href='../../'><i class="fa fa-home"></i></a>
+    </header> --}}
     <div id="container">
         {{#each this.animes}}
             {{> tier-block tier=@key animes=this}}
         {{/each}}
     </div>
-
+    {{!-- <script src='/js/profileRedirect.js'></script> --}}
 </body>
 </html>

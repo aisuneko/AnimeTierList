@@ -20,7 +20,7 @@ let tierBreakpoints = [
         breakpoint: 8.7
     },
     {
-        tier: 'A+',
+        tier: 'A++',
         breakpoint: 8.5
     },
     {
@@ -32,7 +32,7 @@ let tierBreakpoints = [
         breakpoint: 8
     },
     {
-        tier: 'A+',
+        tier: 'A-',
         breakpoint: 7.9
     },
     {
@@ -44,7 +44,7 @@ let tierBreakpoints = [
         breakpoint: 7.5
     },
     {
-        tier: 'B+',
+        tier: 'B-',
         breakpoint: 7
     },
     {

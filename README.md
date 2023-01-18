@@ -1,3 +1,18 @@
+# AnimeTierList
+> This is a fork of [Qnnie's original project](https://github.com/Qnnie/AnimeTierList), mainly for personal use. 
+> ## New features:
+> - Fully customizable tier breakpoints (modifiable in `src/helpers.js`) and dynamic tier generation (the original project simply has default tiers hardcoded in it, making it difficult to customize the tier ranks)
+> - Adjustable color gradient as seen in tier rank boxes. This is powered by rainbowvis.js and is controllable by the following url query string parameters: `?start_color=<color_name>&end_color=<color_name>` (color names are taken from [here](http://www.w3.org/TR/css3-color/#svg-color))
+> - De-bloated and minified to an extent, with useless user-side fluff (e.g. homepage) removed, thus acting as a REST API-only backend. Simply enter the correct url path for the desired pages - for example, `/anilist/<username>`. 
+> ## Known issues:
+> - Tested with AniList only (since I'm an AniList user). MyAnimeList and Kitsu routes aren't guaranteed to work without bugs. Also, the original author's MAL-only solution for customizable tier list settings might not work in this fork (I might fix it in the future though).
+>- Currently you still have to edit the said source code and run the project locally if you want custom tier ranks. Perhaps there is a way to turn it into a neat API interface?
+
+
+## Original Project README:
+
+---
+---
 <img src='src/public/images/HomePreview.png'>
 <img src='src/public/images/ListPreview.png'>
 
