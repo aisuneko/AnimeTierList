@@ -13,8 +13,6 @@
 
 ---
 ---
-<img src='src/public/images/HomePreview.png'>
-<img src='src/public/images/ListPreview.png'>
 
 ## NOTE
 
